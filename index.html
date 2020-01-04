@@ -1,116 +1,232 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
 
-    <title> Xam Technology </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <title> Xam Technology </title>
 
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      color: white;
-      font-size: 25px;
-      font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    .bgimg {
-      background-image: url('img/bg-masthead.jpg');
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-    }
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
 
-    .bgimg .overlay {
-      position: absolute;
-      background-color: #212529;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0.3;
-    }
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 16px;
-    }
+</head>
 
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 16px;
-    }
-
-    .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    hr {
-      margin: auto;
-      width: 40%;
-    }
-  </style>
 <body>
 
-<div class="bgimg">
-  <div class="overlay"> </div>
-  <div class="topleft">
-    <p> Xam Technology</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p>A revolution for educational technology</p>
-  </div>
-</div>
+  <!-- Navigation -->
+  <nav class="navbar sticky-top navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Xam Technology</a>
+      <!-- <a href="#">Download</a> -->
+      <ul class="list-inline" style="margin-top: auto; margin-bottom: auto;">
+        <li class="list-inline-item"><a class="nav-link" href="#">Login</a></li>
+        <!-- <li class="list-inline-item"><a class="nav-link" href="#">Pricing</a></li> -->
+        <li class="list-inline-item"><a class="nav-link" href="#">Signup</a></li>
+      </ul>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 17, 2020 00:00:00").getTime();
+    </div>
+  </nav>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Learning should be easy. <br> Study efficiently. </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button class="btn btn-lg btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-book-open m-auto text-primary"></i>
+            </div>
+            <h3>AI Reviewer</h3>
+            <p class="lead mb-0"> AI interactions and generated questions from your Study Materials specially for you.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-docs m-auto text-primary"></i>
+            </div>
+            <h3>Manage Study Materials</h3>
+            <p class="lead mb-0">Never lose your Study Materials and keep them from cluttering of your desk.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <div class="m-auto"> 
+                <i class="icon-screen-desktop text-primary"></i>
+                <i class="icon-screen-smartphone text-primary"></i>
+              </div>
+            </div>
+            <h3>Web and Mobile</h3>
+            <p class="lead mb-0">Access your Study Materials through the internet from your phone and computer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>AI Powered Reviewing</h2>
+          <p class="lead mb-0"> Let Xammy be your exam buddy, an AI designed to accompany you in your studies. Interact with him by asking questions or answering his carefully crafted queries based on your Study Materials. </p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Study Material Management</h2>
+          <p class="lead mb-0"> Be more productive with an organized Study Materials. Manage your notes for each subject and keep them safe. You can then easily search through them to improve the flow of studying. </p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Web &amp; Mobile Access</h2>
+          <p class="lead mb-0"> Study on the Go. Xammy and your Study Materials will be there for you. You don't have to bring all those books and papers. All this is accessible through a few clicks from your Phone and Computers. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+<!--   <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center mt-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Xam Technology 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
