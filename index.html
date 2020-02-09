@@ -8,7 +8,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title> Xam Technology </title>
+  <!-- Title in Tab-->
+  <link rel="shortcut icon" href="./img/logo-tab.png" />
+  <title> XAM Technology </title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,20 +22,26 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="css/landing-page.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- Custom javascript for this template-->
+    <script type="text/javascript" src="index.js"></script>
 
   <!-- Navigation -->
-  <nav class="navbar sticky-top navbar-light bg-light static-top">
+  <nav class="navbar sticky-top navbar-light bg-light static-top custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Xam Technology</a>
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo-navbar.png" alt="logo" height="40px" />
+      </a>
       <!-- <a href="#">Download</a> -->
       <ul class="list-inline" style="margin-top: auto; margin-bottom: auto;">
-        <li class="list-inline-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="list-inline-item"><a class="nav-link header-item" href="#">Subscribe for Updates</a></li>
+        <!-- <li class="list-inline-item"><a class="nav-link" href="#">Login</a></li> -->
         <!-- <li class="list-inline-item"><a class="nav-link" href="#">Pricing</a></li> -->
-        <li class="list-inline-item"><a class="nav-link" href="#">Signup</a></li>
+        <!-- <li class="list-inline-item"><a class="nav-link" href="#">Signup</a></li> -->
       </ul>
 
     </div>
@@ -42,7 +50,7 @@
   <!-- Masthead -->
   <header class="masthead text-white text-center">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container masthead-tagline">
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <h1 class="mb-5">Learning should be easy. <br> Study efficiently. </h1>
@@ -50,7 +58,7 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <button class="btn btn-lg btn-primary">Get Started</button>
+          <button class="btn btn-lg btn-primary masthead-btn">Get Started</button>
         </div>
       </div>
     </div>
@@ -59,7 +67,13 @@
   <!-- Icons Grid -->
   <section class="features-icons bg-light text-center">
     <div class="container">
-      <div class="row">
+      <div class="row hidden element-wait-scroll">
+        <div class="col-md-8 offset-md-2 col-sm-12 features-icons-question">
+            <div class="col-lg-6 offset-lg-3 col-sm-12 features-icons-question-main"><h1>WHAT IS XAM?</h1></div>
+            <span class="lead mb-0">A platform for collaborative learning where people can manage, share and discuss their study materials.</span>
+        </div>
+      </div>
+      <div class="row hidden element-wait-scroll">
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
@@ -97,22 +111,21 @@
   <!-- Image Showcases -->
   <section class="showcase">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
+      <div class="row no-gutters hidden element-wait-scroll">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>AI Powered Reviewing</h2>
           <p class="lead mb-0"> Let Xammy be your exam buddy, an AI designed to accompany you in your studies. Interact with him by asking questions or answering his carefully crafted queries based on your Study Materials. </p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div class="row no-gutters hidden element-wait-scroll">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Study Material Management</h2>
           <p class="lead mb-0"> Be more productive with an organized Study Materials. Manage your notes for each subject and keep them safe. You can then easily search through them to improve the flow of studying. </p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div class="row no-gutters hidden element-wait-scroll">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Web &amp; Mobile Access</h2>
@@ -155,7 +168,7 @@
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center mt-1">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container hidden element-wait-scroll">
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <h2 class="mb-4">Ready to get started? Sign up now!</h2>
